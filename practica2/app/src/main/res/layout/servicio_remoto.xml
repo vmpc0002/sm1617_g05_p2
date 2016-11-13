@@ -12,22 +12,8 @@
     tools:context="es.ujaen.git.practica1.ServicioRemotoActivity">
 
     <TextView
-        android:id="@+id/servicio_remoto_user_textview"
+        android:id="@+id/servicio_remoto_reqserver_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/servicio_remoto_pass_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/servicio_remoto_ip_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/servicio_remoto_port_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 </LinearLayout>

@@ -10,32 +10,22 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class ServicioRemotoActivity extends AppCompatActivity {
-    TextView user, pass, port, ip;
-
     /**
      * Metodo encargado de la recepción de los valores de autentificación.
      *
      * @param savedInstanceState
      */
+    public String muser, mpass, mip;
+    public int mport;
+    public TextView user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String muser, mpass, mip;
-        int mport;
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.servicio_remoto);
-        user = (TextView) findViewById(R.id.servicio_remoto_user_textview);
-        pass = (TextView) findViewById(R.id.servicio_remoto_pass_textview);
-        port = (TextView) findViewById(R.id.servicio_remoto_port_textview);
-        ip = (TextView) findViewById(R.id.servicio_remoto_ip_textview);
+        user = (TextView)findViewById(R.id.servicio_remoto_reqserver_textview);
         muser = getIntent().getStringExtra("user");
         mpass = getIntent().getStringExtra("pass");
         mport = getIntent().getIntExtra("port", 4);
         mip = getIntent().getStringExtra("ip");
-
-        user.setText(muser);
-        pass.setText(mpass);
-        port.setText(Integer.toString(mport));
-        ip.setText(mip);
     }
 }
